@@ -1,0 +1,22 @@
+
+
+
+2/18/2020
+
+It seems the correct way to merge the Startup-3
+output and the Academic theme is as follows:
+
+from the extracted Startup 3 folder:
+
+copy index.html to layouts/
+copy {i,css,js} to static/
+copy scss/* to assets/scss
+
+
+
+
+
+
+
+# cute git dry-run add cmd
+git add -n -v .
