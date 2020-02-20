@@ -254,29 +254,30 @@ Content 27 -->
 	<div class="container px-xl-0">
 		<div class="row justify-content-center">
 			<div class="col-xl-10 col-lg-11">
-				<h2 class="small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Easy steps</h2>
+				<h2 class="small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Get going in 2 minutes and 3 steps</h2>
 				<div class="row">
 					<div class="mt-25 col-lg-10 inner">
 												<div class="pb-50 relative block">
 							<div class="content_20_line"></div>							<div class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">1</div>
 							<div class="ml-70 pt-10 block_inner" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-								<div class="f-heading f-18 medium">How Startup Framework works?</div>
+								<div class="f-heading f-18 medium">Signup for an account</div>
 								<div class="mt-20 color-heading text-adaptive">
-									The Generator App is an online tool that helps you to export ready-made templates <br />
-									ready to work as your future website. It helps you to combine slides, panels and other <br />
-									components and export it as a set of static files: HTML/CSS/JS.								</div>
+									We are going to provide you with a TURN username and password, <br />
+									and free or trial bandwidth, and to protect your credentials <br />
+									you need to create an account, but its super simple!	</div>
 							</div>
 						</div>
 												<div class="pb-50 relative block">
 							<div class="content_20_line"></div>							<div class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">2</div>
 							<div class="ml-70 pt-10 block_inner" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-								<div class="f-heading f-18 medium">Twenty five awesome samples</div>
+								<div class="f-heading f-18 medium">Receive your long-term TURN credentials</div>
 								<div class="mt-20 color-heading text-adaptive">
 									<div>
-										The most important part of the Startup Framework is the samples. The samples form a set <br />
-										of 25 usable pages you can use as is or you can add new blocks from UI Kit. By choosing <br />
-										one of the 25 configurations of the future startup, the process of creation is simple and <br />
-										easy.
+										After you sign up, you will see your TURN username(s) and password(s) on your account page. <br />
+										You get two kinds of login info: long-term and short-term <br />
+										For getting started and development, it's easier to use long-term creds.<br />
+										Later, when you start to deploy your WebRTC application, you must use short-term. <br />
+										The account page links an article which explain the two options in depth.
 									</div>
 									<div class="mt-35 d-sm-flex align-items-start video_block">
 										<a href="https://www.youtube.com/embed/RcTFVcoibI0?rel=0&showinfo=0" target="_blank" data-fancybox="content_20_fancybox" class="w-170 relative">
@@ -284,10 +285,9 @@ Content 27 -->
 											<img srcset="i/content_20_video_poster@2x.jpg 2x" src="i/content_20_video_poster.jpg" class="radius6" alt="" />
 										</a>
 										<div class="ml-30 mw-270 inner">
-											<div class="f-14 semibold text-uppercase sp-20 color-main">Fell our design</div>
+											<div class="f-14 semibold text-uppercase sp-20 color-main">WATCH A TUTORIAL VIDEO</div>
 											<div class="mt-15 text-adaptive">
-												Startup Design Framework contains components which can 
-												easily be integrated into almost any design. 
+												Demo video of the entire processe: sign-up, get creds, and test creds with a simple WebRTC application.
 											</div>
 										</div>
 									</div>								</div>
@@ -296,12 +296,38 @@ Content 27 -->
 												<div class="relative block">
 														<div class="bg-gray color-heading radius_full w-40 h-40 f-18 medium lh-40 text-center number">3</div>
 							<div class="ml-70 pt-10 block_inner" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
-								<div class="f-heading f-18 medium">Variety of designs</div>
-								<div class="mt-20 color-heading text-adaptive">
-									<div>
+								<div class="f-heading f-18 medium">Update your code, and your done!</div>
+								<div class="mt-10 color-heading text-adaptive">
+									<!--
+myPeerConnection = new RTCPeerConnection({
+  iceServers: [
+    {
+      urls: ["turns:turnserver.example.org", "turn:turnserver.example.org"],
+      username: "webrtc",
+      credential: "turnpassword"
+    },
+    {
+      urls: "stun: stunserver.example.org"
+    }
+  ]
+});
+									-->
+<pre><code class="javascript">var peercon = new RTCPeerConnection({
+	iceServers: [
+		{
+			urls: ["turn:limeturn.com"],
+			username: "sample-username",
+			credential: "sample-pass-credential"
+		},
+		{ 		
+			urls: "stun: limeturn.com"
+ 		}
+	]});									</code></pre>
+
+<!-- 									<div>
 										You can decide whether to create your site using UI Kit blocks or samples. The blocks <br />
 										can merge together in various combinations.
-									</div>
+									</div> -->
 									<a href="#" class="mt-20 btn action-1">Learn More</a>								</div>
 							</div>
 						</div>
